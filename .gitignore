@@ -1,2 +1,4 @@
 venv/
 .idea/
+output/
+.DS_Store/
