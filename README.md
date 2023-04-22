@@ -2,7 +2,7 @@
 
 This is a script I wrote to download all of my Crowdmark assessments when I graduated.
 
-I searched for similar tools but wasn't satisfied because other tools simply called the Crowdmark API.
+I searched for similar tools but wasn't satisfied because other tools simply called Crowdmark's API.
 My downloader is unique because it downloads each assessment's page as an HTML file to preserve the TA's
 feedback on each image.
 
