@@ -9,7 +9,7 @@ def main():
     driver = webdriver.Chrome()
     driver.get("https://app.crowdmark.com/sign-in/waterloo")
 
-    input("Enter any random string to indicate you logged in: ")
+    input("Press Enter after logging in: ")
 
     assert "Crowdmark" in driver.title
     working_directory = os.getcwd()

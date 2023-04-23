@@ -11,7 +11,9 @@ feedback on each image.
 Install Selenium (the browser automation tool to click on links and download images robotically)
 `pip3 install -r requirements.txt`
 
-Note: Selenium is a dependency and is kinda big. So you should probably make a python virtual env, source the virtual env, then install it (so you can easily delete all the dependencies when you're done)
+Note: Selenium is a dependency and is kinda big. So you should probably make a python virtual env, source the virtual
+env, then install it (so you can easily delete all the dependencies when you're done)
+
 1) `python3 -m venv ./venv`
 2) `source venv/bin/activate`
 3) `pip3 install -r requirements.txt`
@@ -22,7 +24,7 @@ Note: Selenium is a dependency and is kinda big. So you should probably make a p
     - This will launch a new Chrome webpage and navigate to Waterloo's Crowdmark page
 2) Manually log in
     - I cannot automate this part because everyone has different credentials and 2FA schemes.
-3) Return to the terminal and type something random and press enter.
+3) Return to the terminal and press enter.
     - This tells the script that you have finished logging in
 4) Sit back and relax! All of the HTML pages will be saved underneath the `output/` directory (it will be created after
    you run the script)
