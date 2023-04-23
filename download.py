@@ -23,7 +23,7 @@ def main():
     end_time = time.time()
 
     elapsed_time = end_time - start_time
-    print("finished downloading in: ", elapsed_time, " seconds!")
+    print("Finished downloading in: ", elapsed_time, " seconds!")
     driver.close()
     exit(0)
 
