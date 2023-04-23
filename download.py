@@ -18,11 +18,17 @@ def main():
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
 
+    start_time = time.time()
     download_assessments_for_ith_page(driver, output_directory, 1)
+    end_time = time.time()
+
+    elapsed_time = end_time - start_time
+    print("finished downloading in: ", elapsed_time, " seconds!")
+    driver.close()
+    exit(0)
 
 
 def download_assessments_for_ith_page(driver, output_directory, starting_page):
-    start_time = time.time()
     page_num = starting_page
     # for each page in crowdmark, install each assessment
     while True:
@@ -34,12 +40,8 @@ def download_assessments_for_ith_page(driver, output_directory, starting_page):
         a_tags = course_list.find_elements(By.TAG_NAME, "a")
 
         if len(a_tags) == 0:
-            # there are no more links on this page, so we have scrapped all the assessments
-            end_time = time.time()
-            elapsed_time = end_time - start_time
-            print("finished downloading in: ", elapsed_time, " seconds!")
-            driver.close()
-            exit(0)
+            # there are no more links on this page, so we have scraped all the assessments
+            return
 
         urls = [a_tag.get_attribute("href") for a_tag in a_tags]
         for url in urls:
