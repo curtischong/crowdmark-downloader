@@ -19,7 +19,7 @@ Note: Selenium is a dependency and is kinda big. So you should probably make a p
 ### Usage
 
 1) Run the script using this command `python3 download.py`.
-    - This will launch a new Chrome webpage and navigate to Waterloo's Learn page
+    - This will launch a new Chrome webpage and navigate to Waterloo's Crowdmark page
 2) Manually log in
     - I cannot automate this part because everyone has different credentials and 2FA schemes.
 3) Return to the terminal and type something random and press enter.
