@@ -11,6 +11,11 @@ feedback on each image.
 Install Selenium (the browser automation tool to click on links and download images robotically)
 `pip3 install -r requirements.txt`
 
+Note: Selenium is a dependency and is kinda big. So you should probably make a python virtual env, source the virtual env, then install it (so you can easily delete all the dependencies when you're done)
+1) `python3 -m venv ./venv`
+2) `source venv/bin/activate`
+3) `pip3 install -r requirements.txt`
+
 ### Usage
 
 1) Run the script using this command `python3 download.py`.
