@@ -35,6 +35,8 @@ This program assumes that you have a stable internet connection and that you are
 sitting.
 If your computer goes to sleep, the script will be interrupted.
 
+This script does NOT download archived courses. Since I don't have archived courses on my Crowdmark I couldn't test this functionality. It shouldn't be hard to update the script though.
+
 ### Maintenance
 
 I will not be maintaining this repo because I just wanted to write this simple script in an afternoon to help with a
