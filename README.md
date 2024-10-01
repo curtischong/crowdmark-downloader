@@ -22,6 +22,10 @@ env, then install it (so you can easily delete all the dependencies when you're 
 2) `source venv/bin/activate`
 3) `pip3 install -r requirements.txt`
 
+This link might help you if you come across a `The chromedriver version cannot be discovered` error:
+
+https://stackoverflow.com/questions/77401357/the-chromedriver-version-cannot-be-discovered-selenium-python
+
 ### Usage
 
 1) Run the script using this command `python3 download.py`.
@@ -47,5 +51,9 @@ I will not be maintaining this repo because I just wanted to write this simple s
 small task. Hopefully you will also find this code useful!
 
 Oh, and also...........
+
+### Troubleshooting
+
+In case of an unexpected error (maybe Crowdmark has been updated), you may find it helpful to use [pdb](https://docs.python.org/3/library/pdb.html) to inspect the state of the downloader interactively. To use it, insert `import pdb; pdb.set_trace()` at the location where you would like to break into the debugger and run the downloader as usual.
 
 # Congrats on Graduating!
