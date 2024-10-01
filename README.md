@@ -1,3 +1,7 @@
+# IMPORTANT:
+
+- this repo doesn't really work (outdated). This PR has code that's closest to working: https://github.com/curtischong/crowdmark-downloader/pull/5
+
 # crowdmark-downloader
 
 This is a script I wrote to download all of my Crowdmark assessments when I graduated.
